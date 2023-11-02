@@ -8,9 +8,10 @@ interface IPost {
 }
 
 const PostItem: React.FC<IPost> = ({ post }) => {
+  const [user] = users.filter((user) => user.id == post.author_id);
   return (
     <div className="post">
-      <AuthorItem user={users[0]} createdAt={post.created_at} />
+      <AuthorItem user={user} createdAt={post.created_at} />
       <div className="body">
         <img className="img" src={post.image_url} alt="" />
         <div className="main-content">
