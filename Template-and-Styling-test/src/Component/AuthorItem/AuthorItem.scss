@@ -1,5 +1,6 @@
 .author {
   display: flex;
+  flex-wrap: wrap;
   padding: 8px;
   border-bottom: 1px solid rgb(216, 216, 216);
   .avatar {
@@ -9,6 +10,7 @@
     border-radius: 25px;
   }
   .name {
+    min-width: 150px;
     font-size: 14px;
     color: #f47b5a;
     font-weight: bold;
