@@ -5,12 +5,16 @@ import "./PostItem.scss";
 
 interface IPost {
   post: Post;
+  isBlue: boolean;
 }
 
-const PostItem: React.FC<IPost> = ({ post }) => {
+const PostItem: React.FC<IPost> = ({ post, isBlue }) => {
   const [user] = users.filter((user) => user.id == post.author_id);
   return (
-    <div className="post">
+    <div
+      className="post"
+      style={isBlue ? { background: "#ccecff" } : { background: "#fff" }}
+    >
       <AuthorItem user={user} createdAt={post.created_at} />
       <div className="body">
         <img className="img" src={post.image_url} alt="" />

@@ -7,8 +7,8 @@ function App() {
     <div className="app">
       <h1>MAQE Forum</h1>
       <p>Your Current timezone is: Asia/Bangkok</p>
-      {posts.map((postItem) => (
-        <PostItem post={postItem} />
+      {posts.map((postItem, index) => (
+        <PostItem post={postItem} isBlue={index % 2 == 1} />
       ))}
     </div>
   );
