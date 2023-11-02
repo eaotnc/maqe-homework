@@ -12,7 +12,7 @@ function App() {
           <div className="character-circle-inner ">A</div>
         </div>
         <div className="character-circle">
-          <div className="character-circle-inner ">Q</div>
+          <div className="character-circle-inner rotate">Q</div>
         </div>
         <div className="character-circle">
           <div className="character-circle-inner ">E</div>

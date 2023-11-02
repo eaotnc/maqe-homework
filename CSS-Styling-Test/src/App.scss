@@ -1,6 +1,7 @@
 .maqe {
   position: relative;
   margin-left: 20%;
+
   .horizontal-line {
     top: 90px;
     position: absolute;
@@ -42,8 +43,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 60px;
+    font-size: 70px;
     font-weight: bold;
     text-shadow: 0px 1px 6px #424242;
+  }
+  .rotate {
+    transform: rotate(-120deg);
   }
 }
