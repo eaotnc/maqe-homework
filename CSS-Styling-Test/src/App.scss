@@ -1,0 +1,48 @@
+.maqe {
+  position: relative;
+  .horizontal-line {
+    top: 90px;
+    position: absolute;
+    background-color: black;
+    border-radius: 25px;
+    height: 20px;
+    width: 1200px;
+    box-shadow: 3px 2px 13px 0px #000;
+  }
+
+  .circle-element-group {
+    display: flex;
+    margin-left: 50px;
+  }
+  .character-circle {
+    width: 200px;
+    height: 200px;
+    margin: 2px;
+    border-radius: 100px;
+    background: rgb(107, 197, 232);
+    background: linear-gradient(
+      170deg,
+      rgba(107, 197, 232, 1) 0%,
+      rgba(155, 212, 210, 1) 100%
+    );
+    color: white;
+    padding: 10px;
+    z-index: 5;
+    box-shadow: 3px 2px 13px 0px #000;
+  }
+  .character-circle-inner {
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+    border: 10px solid white;
+    background: transparent;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 0px 1px 6px #424242;
+  }
+}
