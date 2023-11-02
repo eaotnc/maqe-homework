@@ -4,17 +4,17 @@
   background: #fff;
   box-shadow: 1px 2px 5px #adadad;
   .body {
-    padding: 10px;
+    padding: 20px;
 
     display: flex;
     flex-wrap: wrap;
     .img {
       width: 170px;
       height: 130px;
-      margin: 5px;
+      margin: 15px;
     }
     .main-content {
-      padding: 20px;
+      padding: 0 15px;
       min-width: 100px;
       max-width: 800px;
       .title {
